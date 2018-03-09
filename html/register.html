@@ -1,0 +1,69 @@
+<HTML>
+    <head>
+        <TITLE> Trekkera </TITLE>
+        <link href="../styles/main.css" rel="stylesheet"/>
+        <script type="text/javascript" src="../JavaScript/checkRequired.js"></script>
+    </head>
+<BODY BGCOLOR="white" TEXT = "black">
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../isindexSearch.php">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="page.html">Destinations</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<center>
+<br> <br> <br> <br>
+<IMG src ="../Trekkera_logo.jpg", ALIGN = middle> <br>
+
+<form name="new" action="./../addMember.php" method="post" onsubmit="return checkRequired();">
+<h1>Registration Form</h1>
+<br>Please fill out the following fields: <br>
+<table width = 400>
+<tr><td>First Name:</td> <td> <input type="text" name="fName"  required /></td></tr>
+<tr><td>Last Name: </td> <td> <input type="text" name="lName" required/></td> </tr>
+<tr><td>Email: </td> <td>  <input type="text" name = "Email" required/> <span id="EMAIL_REQUIRED"></span></td></tr>
+<tr><td>Password: </td> <td> <input type ="password" name = "Pass" required/> </td></tr>
+</table>
+
+<br>Please enter your trip information: <br>
+<table width = 400>
+<tr><td>Origin:</td> <td> <input type="text" name="Origin" /> </td></tr>
+<tr><td>Destination: </td> <td> <input type="text" name="Destination" /> </td> </tr>
+<tr><td>Departure Date:</td> <td> <input type="date" name="dDate" /> </td></tr>
+<tr><td>Departure Time: </td> <td> <input type="time" name="dTime" /> </td> </tr>
+</table>
+
+<br>Are you willing to drive? <br>
+<table width = 100>
+<tr><td> <input type="radio" name="Driver" value="Yes" />  </td> <td>Yes </td></tr>
+<tr><td> <input type="radio" name="Driver" value="No" /> </td> <td> No </td></tr>
+</table>
+<br>If you are willing to drive, how many passengers could you take: <br>
+<table width = 50>
+<tr><td> <input type="number" name="Seats" />  </td> </tr>
+</table>
+
+<br><input type="submit" value="Submit">  <br>
+</form>
+<br>
+
+<br><br><br>
+<hr>
+    &copy ztb & dz4
+    <br>
+
+<font size = 1> Trek on  </font>
+
+</center>
+
+</BODY>
+</HTML>

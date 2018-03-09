@@ -1,0 +1,52 @@
+<HTML>
+<TITLE> The HandyRides - Member Registration
+</TITLE>
+<BODY BGCOLOR="white" TEXT = "black">
+
+<center>
+<br> <br>
+<IMG src ="logo.jpg", ALIGN = middle> <br><br><br>
+
+<form name="new" action="addMember.php" method="post">
+<br>Please fill out the following fields: <br>
+<table width = 300>
+<tr><td>First Name:</td> <td> <input type="text" name="fName" /> </td></tr>
+<tr><td>Last Name: </td> <td> <input type="text" name="lName" /> </td> </tr>
+<tr><td>Email: </td> <td>  <input type="text" name = "Email" /> </td></tr>
+<tr><td>Password: </td> <td> <input type ="password" name = "Pass" /> </td></tr>
+</table>
+
+<br>Please enter your trip information: <br>
+<table width = 300>
+<tr><td>Origin:</td> <td> <input type="text" name="Origin" /> </td></tr>
+<tr><td>Destination: </td> <td> <input type="text" name="Destination" /> </td> </tr>
+<tr><td>Departure Date:</td> <td> <input type="date" name="dDate" /> </td></tr>
+<tr><td>Departure Time: </td> <td> <input type="time" name="dTime" /> </td> </tr>
+</table>
+
+<br>Do you have a car: <br>
+<table width = 100>
+<tr><td> <input type="radio" name="Hascar" value="Yes" />  </td> <td>Yes </td></tr>
+<tr><td> <input type="radio" name="Hascar" value="No" /> </td> <td> No </td></tr>
+</table>
+<br>If you have a car, how many seats can you offer: <br>
+<table width = 100>
+<tr><td> <input type="number" name="Seats" />  </td> </tr>
+</table>
+
+<br><input type="submit" value="Submit">  <br>
+<br> <a href="isindexSearch.php"> Return to Homepage </a> <br>
+</form>
+<br>
+
+<br><br><br>
+<hr>
+ &copy Chenyi Chen
+<br>
+
+<font size = 1> Sharing rides, less congestion  </font>
+
+</center>
+
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+<!-- The following echo commands generate standard HTML output for the browser to view. -->
+<HTML>
+<head>
+    <TITLE> Trekkera </TITLE>
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script type ="text/javascript" src ="./JavaScript/loadSplashPage.js"></script>
+</head>
+
+<body onload="loadSplashPage()">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./html/register.html">Register</a></li>
+                    <li><a href="./html/page.html">Destinations</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <center>
+
+        <br><br><br><br>
+        <table border="0" width="95%" >
+            <tr>
+                <th ALIGN=RIGHT>Sign In: </th>
+            </tr> 
+            <tr>
+                <td ALIGN=RIGHT>
+            <FORM action="login.php" method="post">
+            <P>
+                <LABEL for="email">Email:&nbsp &nbsp </LABEL>
+                <INPUT type="text" name="Email"><BR>
+                <LABEL for="pass">Password: </LABEL>
+                <INPUT type="password" name="Pass"><BR>
+                <INPUT type="submit" value="Sign In"> 
+            </P>
+            </FORM> 
+        </td>
+            </tr> 
+        </table>
+   
+        <br>
+        <img src='Trekkera_logo.jpg' /> <br><br>   <!-- adding a picture -->
+        <BODY BGCOLOR="white" TEXT = "black">   <!-- setting background color -->
+        <p>Search locations to see if there is a trekker waiting to travel with you. </p>
+
+<!-- Notice the creation of a form in HTML. -->
+
+<!-- <form action= ""> tells says which page to send the results of the form to. -->
+<!-- <input type="text"> denotes a text input, the name="query" part -->
+        <form action="isindexSearch.php" method="get" style="margin:10px;">
+            <input type="text" placeholder="Enter State of Origin (ex: CA or California)" name="query" style="background-color:#D3D3D3;width:420px;height:30px;"/> <br>
+            <input type="submit" style="margin:5px;width:75px;" value="Search"/>
+        </form>      <!-- End the Form -->
+
+    </center>
+
+<!-- Closing HTML -->
+</body>
+</HTML>
